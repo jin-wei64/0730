@@ -4,11 +4,15 @@
     <meta charset="utf-8" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(function () {
             $("#btnTry").click(function () {
                 // 在這裏寫程式
-                
-
+                // $("selector").action();
+                // $("#report").html("ABC<br>Line2");
+                // var x = $("#report").text();
+                // alert(x);
+                var x = $("#aTextField").prop("value");
+                alert(x);
 
                 
 
@@ -24,11 +28,12 @@
 
 <div id="report">Report:<br></div>
 
-<hr>
+<hr></hr>
 
 <form action="" method="put" onsubmit="return false;">
   <div>
-    <label>Text:</label> <input type="text" id="aTextField" name="someTextField"/>
+    <label>Text:</label> 
+    <input type="text" value = ""id="aTextField" name="someTextField"/>
   </div>
   <div>
     <label>Radio group:</label>
