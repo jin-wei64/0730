@@ -4,12 +4,30 @@
     <meta charset="utf-8" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(function () {
             $("#btnTry").click(function () {
                 // 在這裏寫程式
+                // $("selector").action();
+                // $("#report").html("ABC<br>Line2");
+                // var x = $("#report").text();
+                // alert(x);
+                // var x = $("#aTextField").prop("value");
+                // alert(x);
+                // $("#report").append("line1<br>Line2"); //在結尾加入指定內容
+                // var s = $("#report").text();
+                // alert(s);
                 
+                /* var s = $("#report").text("line1<br>Line2"); 
+                alert(s);
+                $("#report").text("line1<br>Line2"); 
+                var s = $("#report").text();
+                alert(s); */
 
-
+                // var s = $("input[name='radioGroup']").eq(2).prop("checked", "checked");
+                // $("#report").append("radio C selected.");
+                //prepadd
+                // var x = $("#report").html();
+                // alert(x);
                 
 
                 
@@ -24,11 +42,12 @@
 
 <div id="report">Report:<br></div>
 
-<hr>
+<hr></hr>
 
 <form action="" method="put" onsubmit="return false;">
   <div>
-    <label>Text:</label> <input type="text" id="aTextField" name="someTextField"/>
+    <label>Text:</label> 
+    <input type="text" value = ""id="aTextField" name="someTextField"/>
   </div>
   <div>
     <label>Radio group:</label>
