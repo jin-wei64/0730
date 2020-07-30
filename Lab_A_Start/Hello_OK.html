@@ -5,10 +5,16 @@
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
-    // 程式放在這裏
-	$(document).ready(function() {
-		$("div").click(function() {
-			$(this).hide("slow").show("fast");
+    //程式放在這裏
+	// $(document).ready(function() {
+	// 	$("div").click(function() {
+	// 		$(this).hide("slow").show("fast");
+	// 	});
+	// });
+	$(document).ready(function(){
+		$("div").click(function(){
+			$("div").hide("slow"),
+			$("div").show("fast")
 		});
 	});
 
