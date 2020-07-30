@@ -128,9 +128,18 @@
             $("#getButton").on("click", function() {
                 var who = $("#nameTextBox").val(); //$("#nameTextBox").prop("value");
                 var url = "/hello/" + who ;
-                $.get(url, function(dataFromServer){
+                // $.get(url, function(dataFromServer){
+                //     $("#reportSpan").text(dataFromServer);
+                // });
+                $.ajax({
+                    type : "get", //post ,get ,put ,delet
+                    url : "/hello/"+ who ,
+                    data : url
+                }).then(function(dataFromServer){
                     $("#reportSpan").text(dataFromServer);
                 });
+
+
             })
 
 
@@ -151,6 +160,7 @@
                 }).then(function(e){
                     $("#resultSpan").text(e);
                 });
+                
 
 
                 $("#resultSpan").text(JSON.stringify(dataToServer));
