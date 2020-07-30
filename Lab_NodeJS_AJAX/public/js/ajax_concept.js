@@ -67,3 +67,4 @@ function MakeRequestAsync()
   xmlHttp.open("GET", serverUrl + userKeyin, true);
   xmlHttp.send(null);
 }
+$.get()
