@@ -23,20 +23,42 @@
             //         display("btnTry clicked");  
             //     }  
             // );
-            $("#report").on("click",function(){
-                $("#report").html("Rerport:<br>");
+            // $("#report").on("click",function(){
+            //     $("#report").html("Rerport:<br>");
 
+            // })
+            $("#report").click(function(){
+                $("#report").html("Rerport:<br>");
             })
             $("#panda").on({
-            "mouseover":function(){
-                $("#panda").prop("src", "panda2.jpg");
-                display("mouse entr image");
-            },
-            "mouseout":function(){
-                $("#panda").prop("src", "panda1.jpg");
-                display("mouse leave image");
-            }
+                "mouseover":function(){
+                $("#panda").prop("src","panda2.jpg");
+                display("mouse entr image");               
+                },
+                "mouseout":function(){
+                $("#panda").prop("src","panda1.jpg");
+                display("mouse leave image");  
+                }
             })
+
+
+
+
+
+
+
+
+
+            // $("#panda").on({
+            // "mouseover":function(){
+            //     $("#panda").prop("src", "panda2.jpg"); // pror(屬性名稱,value)
+            //     display("mouse entr image");
+            // },
+            // "mouseout":function(){
+            //     $("#panda").prop("src", "panda1.jpg");
+            //     display("mouse leave image");
+            // }
+            // })
             $("#btnOff").click(
                 function(){
                     $("#panda").off("mouseover");
